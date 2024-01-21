@@ -5,14 +5,14 @@
 ## Estructura del Repositorio
 
 - **/arrays:** Problemas relacionados con arreglos.
-  - `random.py`: Este programa te ayuda a elegir un problema aleatorio para evitar la monotonía en la resolución de problemas.
+  - `random_file.py`: Este programa te ayuda a elegir un problema aleatorio para evitar la monotonía en la resolución de problemas.
   - `problem.py`: Cada problema tiene su descripción y solución comentada para que no te pierdas.
 
 ## Cómo Contribuir
 
 Siéntete libre de contribuir a este repositorio de las siguientes maneras:
 
-1. **Problemas Nuevos:** Agrega nuevos problemas con sus soluciones, siguiendo el formato 'No_Nombre.py' si el problema existe en LeetCode.
+1. **Problemas Nuevos:** Agrega nuevos problemas con sus soluciones, siguiendo el formato 'nombre_del_problema.py' en snake_case si el problema existe en LeetCode y sino '_nombre_del_problema.py'.
 
 2. **Mejoras en las Soluciones:** Siéntete libre de mejorar las soluciones existentes. Añade comentarios explicativos, optimiza el código, etc.
 
