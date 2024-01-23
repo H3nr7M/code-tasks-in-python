@@ -24,18 +24,14 @@ def remove_duplicates(nums):
     if not nums:
         return 0
 
-    # Inicializar el puntero para la nueva longitud del array
-    new_length = 1
+    left = 0
 
-    # Iterar sobre el array desde el segundo elemento
-    for i in range(1, len(nums)):
-        # Verificar si el elemento es diferente al anterior
-        if nums[i] != nums[i - 1]:
-            # Actualizar el array in-place y el puntero de la nueva longitud
-            nums[new_length] = nums[i]
-            new_length += 1
-
-    return new_length
+    for right in range(1, len(nums)):
+        if nums[left] != nums[right]:
+            left += 1
+            nums[left] = nums[right]
+            
+    return left + 1
 
 # Ejemplo de uso:
 nums_example = [1, 1, 2, 2, 3, 4, 4, 5]
